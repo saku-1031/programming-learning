@@ -1,3 +1,7 @@
+# This file was produced by Crunchy Studio.
+# Retrieved from https://github.com/saku-1031/programming-learning
+# Please read the README before use!
+
 import random
 
 ans = random.randint(1, 100)
