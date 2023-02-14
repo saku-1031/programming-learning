@@ -8,13 +8,16 @@ import random
 
 # 変数の宣言
 level = input("レベルを選択してください\n1・・・初級/２・・・中級/3・・・上級")
+result = [5, 7]
+max_ans = 100
 if level == str(1):
+    print("初級で続けます")
     result = [2, 5]
     max_ans = 10
 elif level == str(2):
-    result = [5, 7]
-    max_ans = 100
+    print("中級で続けます")
 elif level == str(3):
+    print("上級で続けます")
     result = [7, 17]
     max_ans = 1000
 else:
@@ -32,7 +35,7 @@ while fin == 0:
     if int(ans_input) == ans:
         # 正解だった時の処理
         print("正解！！答えは" + str(ans) + "です。\n今回は" + str(count) + "回間違えました")
-        if count == 1:
+        if count == 0:
             print("イッパツクリア！！")
         elif count <= result[0]:
             print("平均より少ないです。")
